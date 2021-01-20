@@ -1,21 +1,22 @@
 # Data Pipelines with Apache Airflow
 
 ## Introduction
-A music streaming company, Sparkify, has decided that it is time to introduce more automation and monitoring to their data warehouse ETL pipelines. This project would involve creating high grade data pipelines that are dynamic and built from reusable tasks, can be monitored, and allow easy backfills. It also involves running tests against their datasets after the ETL steps have been executed to catch any discrepancies in the datasets.
+Case study
+A Contemporary music streaming company has decided that it is time to introduce more automation and monitoring to their data warehouse ETL pipelines. This project would involve creating high grade data pipelines that are dynamic and built from reusable tasks, can be monitored, and allow easy backfills. It also involves running tests against their datasets after the ETL steps have been executed to catch any discrepancies in the datasets.
 
 
 ## Purpose
 The project will allow more automation and monitoring to their data warehouse ETL pipelines.
 
 ## Data
-The source data resides in S3 and needs to be processed in Sparkify's data warehouse in Amazon Redshift. The source datasets consist of JSON logs that tell about user activity in the application and JSON metadata about the songs the users listen to.
+The source data resides in S3 and needs to be processed in company's data warehouse in Amazon Redshift. The source datasets consist of JSON logs that tell about user activity in the application and JSON metadata about the songs the users listen to. The data was sourced from [Million Song Dataset](http://millionsongdataset.com/)
 
 ```bash
-Song data: s3://udacity-dend/song_data
-Log data: s3://udacity-dend/log_data
+Song data: s3://song_data
+Log data: s3://log_data
 ```
 ### Song Dataset
-The first dataset is a subset of real data from the Million Song Dataset. Each file is in JSON format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID. For example, here are filepaths to two files in this dataset.
+The first dataset is a subset of real data from the million song dataset. Each file is in JSON format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID. For example, here are filepaths to two files in this dataset.
 
 ```bash
 song_data/A/B/C/TRABCEI128F424C983.json
