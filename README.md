@@ -1,7 +1,7 @@
 # Data Pipelines with Apache Airflow
 
 ## Introduction
-###Case study
+### Case study
 A Contemporary music streaming company has decided that it is time to introduce more automation and monitoring to their data warehouse ETL pipelines. This project would involve creating high grade data pipelines that are dynamic and built from reusable tasks, can be monitored, and allow easy backfills. It also involves running tests against their datasets after the ETL steps have been executed to catch any discrepancies in the datasets.
 
 
